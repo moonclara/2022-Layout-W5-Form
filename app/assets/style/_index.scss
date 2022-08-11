@@ -1,0 +1,80 @@
+.main {
+    margin-left: 296px;
+
+    .container-fluid {
+        max-width: 920px;
+        margin: 0 auto;
+    }
+
+    .list-group-item {
+        padding: 12px;
+    }
+
+    .list-group-item.active {
+        color: var(--bs-gray-900);
+        background-color: var(--bs-gray-100);
+        border-color: var(--bs-gray-400);
+    }
+
+    .fz-12 {
+        font-size: $font-size-s;
+    }
+
+    .editor {
+        color: var(--bs-gray-600);
+    }
+
+    .card-header {
+        padding: 12px 16px;
+    }
+
+    .card-body-top {
+        .user-image-1 {
+            width: 40px;
+            height: 40px;
+            background: url(../images/emilywang.jpeg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .user-image-2 {
+            width: 40px;
+            height: 40px;
+            background: url(../images/andychen.jpeg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .user-time {
+            color: var(--bs-gray);
+            font-size: $font-size-sm;
+        }
+    }
+
+    .card-body-bottom {
+        margin-left: 48px;
+        font-size: $font-size-sm;
+
+        .user-message {
+            max-width: 488px;
+        }
+    }
+
+    .button-group {
+
+        .btn-outline-success,
+        .btn-success {
+            padding: 8px 32px;
+            border-radius: 2px;
+        }
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+    }
+
+}

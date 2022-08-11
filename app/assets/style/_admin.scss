@@ -1,0 +1,96 @@
+.admin {
+    .pagination {
+        .page-link {
+            color: var(--bs-gray-900);
+            background-color: #fff;
+            border: 1px solid #198754;
+
+            span {
+                color: var(--bs-green);
+            }
+        }
+
+        .page-item.active .page-link {
+            background-color: var(--bs-green);
+            border-color: var(--bs-green);
+            color: #ffffff;
+        }
+    }
+
+    nav {
+        margin-top: 120px;
+    }
+
+    table .material-symbols-outlined:hover {
+        color: var(--bs-green);
+    }
+
+}
+
+#view {
+    .view-image {
+        width: 141px;
+        height: 141px;
+        background: url(../images/emir.jpeg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .modal-body {
+        padding: 32px;
+    }
+
+    .expand_more {
+        display: none;
+    }
+
+    .expand_less {
+        display: inline-block;
+    }
+
+    .collapsed .expand_more {
+        display: inline-block;
+    }
+
+    .collapsed .expand_less {
+        display: none;
+    }
+
+    .collapse{
+        margin-top: 32px;
+        .btn-outline-danger,.btn-success{
+            padding: 8px 32px;
+        }
+    }
+
+}
+
+#add,
+#edit {
+    .modal-header {
+        padding: 32px;
+    }
+
+    .modal-body {
+        padding: 0px 32px;
+    }
+
+    .modal-footer {
+        padding: 16px 0px;
+    }
+
+    .modal-footer button {
+        padding: 8px 32px;
+    }
+
+    .btn-outline-gray-400 {
+        border-color: #CED4DA;
+        color: #CED4DA;
+
+        &:hover {
+            background: var(--bs-gray-100);
+            color: #CED4DA;
+        }
+    }
+
+}

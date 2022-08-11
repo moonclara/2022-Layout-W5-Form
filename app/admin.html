@@ -1,0 +1,535 @@
+---
+title: 後台表單設計
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main class="main admin">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="d-flex justify-content-between align-items-baseline py-4">
+        <div class="top-title d-flex">
+          <h4 class="me-5">Admin</h4>
+          <button type="button" class="btn d-flex align-items-center fw-bold" data-bs-toggle="modal"
+            data-bs-target="#add">
+            <span class="material-symbols-outlined">
+              add
+            </span>
+            Add New Admin
+          </button>
+        </div>
+        <div class="top-function">
+          <span class="material-symbols-outlined">
+            search
+          </span>
+          <span class="material-symbols-outlined ms-4">
+            notifications
+          </span>
+        </div>
+      </div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Verified</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">#1</th>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>Yes</td>
+            <td>
+              <a href="" data-bs-toggle="modal" data-bs-target="#view">
+                <span class="material-symbols-outlined me-4">
+                  visibility
+                </span>
+              </a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#edit">
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">#2</th>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>Yes</td>
+            <td>
+              <a href="" data-bs-toggle="modal" data-bs-target="#view">
+                <span class="material-symbols-outlined me-4">
+                  visibility
+                </span>
+              </a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#edit">
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">#3</th>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td>Yes</td>
+            <td>
+              <a href="" data-bs-toggle="modal" data-bs-target="#view">
+                <span class="material-symbols-outlined me-4">
+                  visibility
+                </span>
+              </a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#edit">
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">#4</th>
+            <td>Pharrell Murray</td>
+            <td>pharrell.murray@mail.com</td>
+            <td>Yes</td>
+            <td>
+              <a href="" data-bs-toggle="modal" data-bs-target="#view">
+                <span class="material-symbols-outlined me-4">
+                  visibility
+                </span>
+              </a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#edit">
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">#5</th>
+            <td>Annika Mcbride</td>
+            <td>annika.mcbride@mail.com</td>
+            <td>Yes</td>
+            <td>
+              <a href="" data-bs-toggle="modal" data-bs-target="#view">
+                <span class="material-symbols-outlined me-4">
+                  visibility
+                </span>
+              </a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#edit">
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">#6</th>
+            <td>Fatimah Clark</td>
+            <td>fatimah.clark@mail.com</td>
+            <td>Yes</td>
+            <td>
+              <a href="" data-bs-toggle="modal" data-bs-target="#view">
+                <span class="material-symbols-outlined me-4">
+                  visibility
+                </span>
+              </a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#edit">
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">#7</th>
+            <td>Klaudia Rhodes</td>
+            <td>klaudia.rhodes@mail.com</td>
+            <td>Yes</td>
+            <td>
+              <a href="" data-bs-toggle="modal" data-bs-target="#view">
+                <span class="material-symbols-outlined me-4">
+                  visibility
+                </span>
+              </a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#edit">
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">#8</th>
+            <td>Tillie Lucero</td>
+            <td>tillie.lucero@mail.com</td>
+            <td>Yes</td>
+            <td>
+              <a href="" data-bs-toggle="modal" data-bs-target="#view">
+                <span class="material-symbols-outlined me-4">
+                  visibility
+                </span>
+              </a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#edit">
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">#9</th>
+            <td>Sabrina Stephenson</td>
+            <td>sabrina.stephenson@mail.com</td>
+            <td>Yes</td>
+            <td>
+              <a href="" data-bs-toggle="modal" data-bs-target="#view">
+                <span class="material-symbols-outlined me-4">
+                  visibility
+                </span>
+              </a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#edit">
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">#10</th>
+            <td>Annie Smith</td>
+            <td>annie.smith@mail.com</td>
+            <td>Yes</td>
+            <td>
+              <a href="" data-bs-toggle="modal" data-bs-target="#view">
+                <span class="material-symbols-outlined me-4">
+                  visibility
+                </span>
+              </a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#edit">
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <nav aria-label="..." class="p-0">
+        <ul class="pagination d-flex justify-content-end">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&lt;</span>
+            </a>
+          </li>
+          <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&gt;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+<!-- view -->
+<div class="modal fade" id="view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="width: 480px;">
+      <div class="modal-body">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <div class="view-image"></div>
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <div class="view-top d-flex justify-content-between">
+              <p class="modal-title" id="exampleModalLabel">#1</p>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <p class="m-0">Admin</p>
+            <h4>Emir Wicks</h4>
+            <p class="m-0 text-muted">emir.wicks@mail.com</p>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <code class="text-dark">Verified</code>
+              <button class="btn link-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                <span class="material-symbols-outlined expand_less">
+                  expand_less
+                </span>
+                <span class="material-symbols-outlined expand_more">
+                  expand_more
+                </span>
+              </button>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <button type="button" class="btn btn-outline-danger me-3">Deactivate</button>
+              <button type="button" class="btn btn-success">Edit</button>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- add admin -->
+<div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h4 class="modal-title fw-bold" id="exampleModalLabel">New Admin</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="border-bottom">
+          <h5 class="mb-3 fw-bold">Account</h5>
+          <form>
+            <div class="mb-3">
+              <label for="editInputName" class="form-label mb-1">Name</label>
+              <input type="text" class="form-control mb-3 p-3 border-dark" id="editInputName">
+            </div>
+            <div class="mb-3">
+              <label for="editInputEmail" class="form-label mb-1">Email</label>
+              <input type="email" class="form-control mb-4 p-3 border-dark" id="editInputEmail"
+                aria-describedby="emailHelp">
+            </div>
+          </form>
+        </div>
+        <div class="border-bottom">
+          <div class="my-4">
+            <h5 class="mb-3 fw-bold">Verification</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </symbol>
+              <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+              </symbol>
+              <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </symbol>
+            </svg>
+            <div class="text-danger d-flex align-items-center justify-content-between mb-3" role="alert">
+              <div class="d-flex">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                  <use xlink:href="#exclamation-triangle-fill" />
+                </svg>
+                <div class="text-dark fw-bold">
+                  Unverified
+                </div>
+              </div>
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-outline-gray-400 text-success fw-bold" style="height: 51px;">
+                Send Verification Mail</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-bottom">
+          <div class="my-4">
+            <h5 class="mb-3 fw-bold">Access Level</h5>
+            <select class="form-select border-dark" aria-label="Default select example" style="height: 51px;">
+              <option selected>-Choose access level-</option>
+              <option>Admin</option>
+              <option>Two</option>
+              <option>Three</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="border-bottom">
+          <div class="my-4">
+            <h5 class="mb-3 fw-bold">Custom Access</h5>
+            <form>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-dark border-2" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Lecture</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-dark border-2" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Coupon</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-dark border-2" id="exampleCheck3">
+                <label class="form-check-label" for="exampleCheck3">Message</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-dark border-2" id="exampleCheck4">
+                <label class="form-check-label" for="exampleCheck4">Setting</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-dark border-2" id="exampleCheck5">
+                <label class="form-check-label" for="exampleCheck5">Task Menu</label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- edit admin -->
+<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h4 class="modal-title fw-bold" id="exampleModalLabel">Edit Admin</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="border-bottom">
+          <h5 class="mb-3 fw-bold">Account</h5>
+          <form>
+            <div class="mb-3">
+              <label for="editInputName" class="form-label mb-1">Name</label>
+              <input type="text" class="form-control mb-3 p-3 bg-light border-0" id="editInputName" value="Emir Wicks">
+            </div>
+            <div class="mb-3">
+              <label for="editInputEmail" class="form-label mb-1">Email</label>
+              <input type="email" class="form-control mb-4 p-3 bg-light border-0" id="editInputEmail"
+                aria-describedby="emailHelp" value="emir.wicks@mail.com">
+            </div>
+          </form>
+        </div>
+        <div class="border-bottom">
+          <div class="my-4">
+            <h5 class="mb-3 fw-bold">Verification</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </symbol>
+              <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+              </symbol>
+              <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </symbol>
+            </svg>
+            <div class="text-success d-flex align-items-center justify-content-between mb-3" role="alert">
+              <div class="d-flex">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+                  <use xlink:href="#check-circle-fill" />
+                </svg>
+                <div class="text-dark fw-bold">
+                  Verified
+                </div>
+              </div>
+              <div class="text-dark">
+                2020/4/12
+              </div>
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-outline-gray-400 fw-bold" style="height: 51px;" disabled>Send
+                Verification
+                Mail</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-bottom">
+          <div class="my-4">
+            <h5 class="mb-3 fw-bold">Access Level</h5>
+            <select class="form-select border-dark" aria-label="Default select example" style="height: 51px;">
+              <option>-Choose access level-</option>
+              <option selected>Admin</option>
+              <option>Two</option>
+              <option>Three</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="border-bottom">
+          <div class="my-4">
+            <h5 class="mb-3 fw-bold">Custom Access</h5>
+            <form>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-dark border-2" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Lecture</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-dark border-2" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Coupon</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-dark border-2" id="exampleCheck3">
+                <label class="form-check-label" for="exampleCheck3">Message</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-dark border-2" id="exampleCheck4">
+                <label class="form-check-label" for="exampleCheck4">Setting</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-dark border-2" id="exampleCheck5">
+                <label class="form-check-label" for="exampleCheck5">Task Menu</label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="border-bottom">
+          <div class="my-4">
+            <h5 class="mb-3 fw-bold">Deactivate Account</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </symbol>
+              <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+              </symbol>
+              <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </symbol>
+            </svg>
+            <div class="text-danger d-flex align-items-center mb-3" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill" />
+              </svg>
+              <div>
+                This cannot be undone!
+              </div>
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-outline-danger mb-3" style="height: 51px;" disabled>Deactivate This
+                Account</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
